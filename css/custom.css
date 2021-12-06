@@ -1,0 +1,60 @@
+/*
+    Author: Mwayi Kamvantope 
+    I know its not best practice to structure code this
+    way but there was a lot of experimenting with this project
+    and the code below produced the results I wanted to get the
+    site up and running.
+
+    The !important property was placed there to override the default
+    styling done by bootstrap.
+*/
+
+.button-hover-scale:hover {
+	transition: 600ms;
+	transform: scale(0.9);
+	opacity: 0.8;
+	background-color: #de2628;
+	border: none;
+}
+.button-hover-font:hover {
+	transition: 600ms;
+	font-size: 20px;
+	opacity: 0.8;
+	color: #de2628 !important;
+	border: none;
+}
+.nav-button {
+	transition: 900ms;
+	color: #242424;
+}
+.hero-container {
+	background-image: url("../assets/images/space.jpg");
+	background-size: cover;
+	background-repeat: repeat-x;
+}
+
+.inner-card a {
+	transition: 800ms;
+	width: 100%;
+}
+.profile-pic {
+	transition: 800ms;
+}
+.profile-pic:hover {
+	transform: scale(0.9);
+}
+
+.text-decor-no li a{
+	text-decoration: none;
+}
+.text-decor-no li a:hover{
+	color: #de2628;
+}
+.text-decor-no li a:visited{
+	color: #de2628;
+}
+@media (max-width: 768px) {
+	.about-container {
+		padding: 2rem;
+	}
+}
