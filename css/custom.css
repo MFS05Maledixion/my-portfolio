@@ -8,7 +8,17 @@
     The !important property was placed there to override the default
     styling done by bootstrap.
 */
-
+p{
+	font-weight: bolder;
+	color: #000;
+}
+.about-p p{
+	font-weight: 500;
+	color: #000 !important;
+}
+.about-p li{
+	font-weight: 700;
+}
 .button-hover-scale:hover {
 	transition: 600ms;
 	transform: scale(0.9);
