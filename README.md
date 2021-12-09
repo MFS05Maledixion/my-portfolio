@@ -2,7 +2,7 @@
 ## This is my personal website.
 ![I'm a self taught software developer.](https://arturssmirnovs.github.io/github-profile-readme-generator/images/banner.png)
 
-## Please look around.
+## Please feel look around.
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=MFS05Maledixion)](https://github.com/anuraghazra/github-readme-stats)
 
