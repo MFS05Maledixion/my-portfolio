@@ -58,6 +58,12 @@ p{
 .text-decor-no li a:visited{
 	color: #de2628;
 }
+
+.bordered{
+	border: 1px solid #000000;
+	padding-top: 10px;
+}
+
 @media (max-width: 768px) {
 	.text-5r{
 		font-size: 5rem;
@@ -69,3 +75,4 @@ p{
 		padding: 2rem;
 	}
 }
+
