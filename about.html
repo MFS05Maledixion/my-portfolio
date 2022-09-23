@@ -62,7 +62,8 @@
                   <p>
                     I'm Mwayi Fortune Solomon Trevor Lazarus Lucky Chimkwita Zwangendaba Bao Kamvantope. Yeaaah!
                     I Know that's a mouthful.
-                    I'm the 5th child in a family of 6. I'm 19 years old and currently attending university
+                    I'm the 5th child in a family of 6. I'm <span id="_age">0</span> years old and currently attending
+                    university
                     at DMI St-John the Baptist University here in Malawi. Majoring in, you guessed it, Computer Science.
                     I live in the town of Lilongwe, in a small area known as Old Gulliver.
                   </p>
@@ -241,7 +242,7 @@
                     <li>Martial arts tricking 🥋.</li>
                     <li>Song writing 🎙.</li>
                     <li>Screen play writing 📽.</li>
-                    <li>Fiction & Sci-fi writing ✍🏿/li>
+                    <li>Fiction & Sci-fi writing ✍🏿</li>
                     <li>Reading books 📚.</li>
                     <li>And coding blindly 👨🏿‍💻.</li>
                   </ol>
@@ -273,10 +274,22 @@
   </footer>
 
   <script>
+
+    // this script snippet updates my age per what year we're currently in
+    let birthYear = 2001;
+    let currentYear = new Date().getFullYear();
+    let setDate = document.getElementById('_age');
+    function setAge() {
+       // simple age calculation of age by birth year & current year difference
+      setDate.textContent = `${currentYear - birthYear}`;
+    }
     document.addEventListener("DOMContentLoaded", function (event) {
+      // runing setAge
+      setAge();
       // this script snippet updates the css for a navigation link to active status
       navActivePage();
     });
+
   </script>
 
 </body>
