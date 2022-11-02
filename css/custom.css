@@ -241,6 +241,10 @@ p {
 		border-color: transparent white transparent transparent;
 	}
 
+	.left {
+		left: 0;
+	}
+
 	/* Make sure all circles are at the same spot */
 	.left::after,
 	.right::after {
@@ -256,6 +260,7 @@ p {
 		content: "";
 		display: none !important;
 	}
+
 	.left::before {
 		content: "";
 		display: none !important;
