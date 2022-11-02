@@ -2,8 +2,8 @@
 ## This is my personal website.
 ![I'm a self taught software developer.](https://github.com/MFS05Maledixion/my-portfolio/blob/Deployment/assets/images/my_github_banner.png)
 
-## Please feel to look around.
+## Please feel  free to look around.
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=MFS05Maledixion)](https://github.com/anuraghazra/github-readme-stats)
+[![Mwayi Kamvantope's GitHub stats](https://github-readme-stats.vercel.app/api?username=MFS05Maledixion)](https://github.com/MFS05Maledixion/github-readme-stats)
 
 - 🔭 I’m currently working on this page. 
