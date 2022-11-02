@@ -8,6 +8,9 @@
     The !important property was placed there to override the default
     styling done by bootstrap.
 */
+* {
+	box-sizing: border-box;
+}
 
 .background-image-container {
 	background-image: url("../assets/images/background_imgs/bg_img_2.png");
@@ -80,6 +83,16 @@ p {
 	padding-top: 10px;
 }
 
+/* 
+.margin-top-10 {
+	margin-top: 50rem !important;
+}
+*/
+
+.margin-bottom-10 {
+	margin-bottom: 70rem !important;
+}
+
 @media (max-width: 768px) {
 	.text-5r {
 		font-size: 5rem;
@@ -91,5 +104,160 @@ p {
 
 	.pd-2r {
 		padding: 2rem;
+	}
+}
+
+/* handling for the timeline*/
+
+/*
+    creating the vertical timeline bar
+*/
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: rgb(17, 17, 17);
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: 1px;
+}
+
+/* 
+    show the card info 
+*/
+.timeline-card {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+.timeline-card::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: -17px;
+	background-color: rgb(17, 17, 17);
+	border: 4px solid #de2628;
+	top: 15px;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.left {
+	left: -3px;
+}
+
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid #de2628;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #de2628;
+}
+
+.right {
+	left: 50%;
+}
+
+.right::after {
+	left: -6px;
+}
+
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid #de2628;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #de2628 transparent transparent;
+}
+
+.timeline .text-white>h3,
+.timeline .text-white>p,
+.timeline .text-white>ol,
+.timeline .text-white>li,
+.timeline .text-white>ul,
+.timeline .text-white>li {
+	color: white !important;
+}
+
+.custom-btn {
+	color: white !important;
+	border: 2px solid white;
+	margin: 2px;
+}
+
+.content {
+	padding: 20px 30px;
+	background-color: rgb(17, 17, 17);
+	;
+	position: relative;
+	border-radius: 3px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+	.w-sm-100 {
+		width: 100% !important;
+		margin-left: 10px
+	}
+
+	/* Places the timelime to the left */
+	.timeline::after {
+		left: 31px;
+	}
+
+	/* Full-width containers */
+	.timeline-container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	/* Make sure that all arrows are pointing leftwards */
+	.timeline-container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* Make sure all circles are at the same spot */
+	.left::after,
+	.right::after {
+		left: 15px;
+	}
+
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0%;
+	}
+
+	.right::before {
+		content: "";
+		display: none !important;
+	}
+	.left::before {
+		content: "";
+		display: none !important;
 	}
 }
