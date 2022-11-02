@@ -1,6 +1,6 @@
 # Hi there 👋, I'm Mwayi Fortune Solomon Kamvantope
 ## This is my personal website.
-![I'm a self taught software developer.](https://github.com/MFS05Maledixion/my-portfolio/blob/Deployment/assets/images/my_github_banner.png)
+![I'm a self taught software developer.](https://github.com/MFS05Maledixion/my-portfolio/blob/Deployment/assets/images/banners/my_github_banner.png)
 
 ## Please feel  free to look around.
 
