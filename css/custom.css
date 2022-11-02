@@ -8,17 +8,27 @@
     The !important property was placed there to override the default
     styling done by bootstrap.
 */
-p{
+
+.background-image-container {
+	background-image: url("../assets/images/background_imgs/bg_img_2.png");
+	background-repeat: no-repeat;
+	opacity: .8;
+}
+
+p {
 	font-weight: bolder;
 	color: #000;
 }
-.about-p p{
+
+.about-p p {
 	font-weight: 500;
 	color: #000 !important;
 }
-.about-p li{
+
+.about-p li {
 	font-weight: 700;
 }
+
 .button-hover-scale:hover {
 	transition: 600ms;
 	transform: scale(0.9);
@@ -26,6 +36,7 @@ p{
 	background-color: #de2628 !important;
 	border: none;
 }
+
 .button-hover-font:hover {
 	transition: 600ms;
 	font-size: 20px;
@@ -33,6 +44,7 @@ p{
 	color: #de2628 !important;
 	border: none;
 }
+
 .nav-button {
 	transition: 900ms;
 	color: #242424;
@@ -42,37 +54,42 @@ p{
 	transition: 800ms;
 	width: 100%;
 }
+
 .profile-pic {
 	transition: 800ms;
 }
+
 .profile-pic:hover {
 	transform: scale(0.9);
 }
 
-.text-decor-no li a{
+.text-decor-no li a {
 	text-decoration: none;
 }
-.text-decor-no li a:hover{
-	color: #de2628;
-}
-.text-decor-no li a:visited{
+
+.text-decor-no li a:hover {
 	color: #de2628;
 }
 
-.bordered{
+.text-decor-no li a:visited {
+	color: #de2628;
+}
+
+.bordered {
 	border: 1px solid #000000;
 	padding-top: 10px;
 }
 
 @media (max-width: 768px) {
-	.text-5r{
+	.text-5r {
 		font-size: 5rem;
 	}
-	.tp-4r{
+
+	.tp-4r {
 		padding-top: 4rem !important;
 	}
+
 	.pd-2r {
 		padding: 2rem;
 	}
 }
-
