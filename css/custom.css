@@ -65,8 +65,13 @@ p {
 }
 
 .nav-button {
+	font-size: 14px !important;
+	font-weight: bolder !important;
 	transition: 900ms;
-	color: #242424;
+	color: black;
+}
+.border-right-spacer{
+	border-right: 2px solid black;
 }
 
 .inner-card a {
