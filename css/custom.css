@@ -33,6 +33,10 @@
 	color: #de2628 !important;
 }
 
+.nav-link{
+	color: black;
+}
+
 a {
 	text-decoration: none !important;
 }
