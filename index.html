@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Home | 🏡</title>
+  <!-- importing our styling and javascript modules -->
+  <link href="./css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/custom.css">
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body class="minimal">
+  <!-- these border allow us to properly set constraints for moving the background image round -->
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+  <!-- header section containing the page navigation links. -->
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <!-- Responsive button toggle for when viewing on small screen devices. -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- page navigation links -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="nav-button button-hover-font" href="./index.html">Home</a></li>
+            <li><a class="nav-button button-hover-font" href="./projects.html">Projects</a></li>
+            <li><a class="nav-button button-hover-font" href="./about.html">Know Me</a></li>
+            <li><a class="nav-button button-hover-font" href="./contact.html">Lets work</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section containing brief information about who i am and what this site is about. -->
+  <div class="hero-full-container background-image-container white-text-container black-image-project-hover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content pd-2r">
+              <h1 class="text-5r">
+                <!-- main.js will take these typed strings and computer -->
+                <!-- a typewriter effect. Printing one character at at time.-->
+                <span id="typed-strings">
+                  <span>Hi there!</span>
+                  <span>I'm Mwayi.</span>
+                  <span>A self taught software engineer.</span>
+                  <span>This is my personal website.</span>
+                  <span>Feel free to look around.</span>
+                  <span>If you like what you see...</span>
+                  <span>hit me up and let's work together.</span>
+                  <span>I'll see you around.</span>
+                  <span>bye!</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- third party (bootstrap) script to move the backgroung img for a cool effect-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      // this script snippet allows me to access function in the main.js file that move the image around
+      type();
+      movingBackgroundImage();
+      // this script snippet updates the css for a navigation link to active status
+      navActivePage();
+    });
+  </script>
+</body>
+
+</html>
