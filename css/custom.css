@@ -20,6 +20,9 @@
 	opacity: .8;
 }
 
+.font-bold{
+	font-weight: bold;
+}
 .font-weight {
 	color: #242424;
 	font-size: 24px;
@@ -28,6 +31,10 @@
 
 .social-hover:hover {
 	color: #de2628 !important;
+}
+
+.nav-link{
+	color: black;
 }
 
 a {
@@ -65,8 +72,12 @@ p {
 }
 
 .nav-button {
+	font-size: 14px !important;
+	font-weight: bolder !important;
 	transition: 900ms;
-	color: #242424;
+}
+.border-right-spacer{
+	border-right: 2px solid black;
 }
 
 .inner-card a {
