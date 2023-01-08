@@ -15,11 +15,25 @@
 }
 
 .background-image-container {
-	background-image: url("../assets/images/background_imgs/bg_img_2.png");
+	background-image: url("../assets/images/background_imgs/bg-img.png");
 	background-repeat: no-repeat;
-	opacity: .8;
+	opacity: .99;
 }
 
+.image img{
+	width: 1366px !important;
+	height: 300px !important;
+}
+
+.m-2{
+	margin-left: 50%;
+}
+.ml-10{
+	margin-left:50px;
+}
+.ghosted{
+	background-color: gainsboro;
+}
 .font-weight {
 	color: #242424;
 	font-size: 24px;
@@ -121,6 +135,14 @@ p {
 	.pd-2r {
 		padding: 2rem;
 	}
+
+		.m-2 {
+			margin-left: 0%;
+		}
+	
+		.ml-10 {
+			margin-left: 0;
+		}
 }
 
 /* handling for the timeline*/
